@@ -6,8 +6,9 @@
 git status检查文件状态 git status -s 检查文件状态 U
 添加跟踪文件 git add 文件名 A表示已放在暂存区中 A
 将暂存区中的文件提交到git仓库中 git commit -m "提交消息"
-提交之后对文件进行修改，该文件已被跟踪但没有放在暂存区中 M
-暂存已修改的文件 git add  M          暂存多个文件 git add .
+提交之后对文件进行修改，该文件已被跟踪但没有放在暂存区中 红M
+暂存已修改的文件 git add  绿M          暂存多个文件 git add .
 提交 git commit -m "提交消息"
 撤销对指定文件的修改，使该文件返回至git仓库中保存的样子 git checkout -- 文件名
 
+将文件移出暂存区  git reset HEAD 文件名 .号相当于全选
