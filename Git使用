@@ -15,3 +15,7 @@ git status检查文件状态 git status -s 检查文件状态 U
 
 git工作流程 添加跟踪 -> 工作区 -》暂存区 -》git仓库
 跳过暂存区git commit -a -m "提交消息"
+
+移除文件
+从git仓库和工作区同时移除 git rm -f 文件名
+只从git仓库中移除 git rm --cached 文件名
