@@ -12,3 +12,6 @@ git status检查文件状态 git status -s 检查文件状态 U
 撤销对指定文件的修改，使该文件返回至git仓库中保存的样子 git checkout -- 文件名
 
 将文件移出暂存区  git reset HEAD 文件名 .号相当于全选
+
+git工作流程 工作区 -》暂存区 -》git仓库
+跳过暂存区git commit -a -m "提交消息"
