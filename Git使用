@@ -1,0 +1,13 @@
+在项目根目录利用git bash 在调用 git init创建一个空的git仓库
+工作区的四种状态:
+未跟踪：是没有被git管理的文件 
+已被git管理的文件：未修改 已修改 已暂存
+
+git status检查文件状态 git status -s 检查文件状态 U
+添加跟踪文件 git add 文件名 A表示已放在暂存区中 A
+将暂存区中的文件提交到git仓库中 git commit -m "提交消息"
+提交之后对文件进行修改，该文件已被跟踪但没有放在暂存区中 M
+暂存已修改的文件 git add  M          暂存多个文件 git add .
+提交 git commit -m "提交消息"
+撤销对指定文件的修改，使该文件返回至git仓库中保存的样子 git checkout -- 文件名
+
