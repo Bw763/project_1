@@ -19,3 +19,24 @@ git工作流程 添加跟踪 -> 工作区 -》暂存区 -》git仓库
 移除文件
 从git仓库和工作区同时移除 git rm -f 文件名
 只从git仓库中移除 git rm --cached 文件名
+
+创建忽略文件 .gitignore
+.a 忽略.a为后缀的文件
+!sd.a 不忽略sd.a文件
+/build 忽略当前目录下的build文件
+build/ 忽略任何目录下build文件
+doc/*.txt 忽略doc文件下的 .txt文件
+doc/**/*.txt 忽略doc所有目录下的 .txt文件
+
+查看提交历史
+git log 查看所有提交历史
+git log -* 查看前*次提交历史
+git log -* --pretty=oneline 将所有的历史信息在一行显示
+             哈希值   作者  事件  说明
+--pretty=oneline:"%h | %an |%ar |%s"
+
+回退版本
+git reset --hard 哈希值
+回到指定版本后
+git reflog --pretty=oneline 好看所有历史记录
+git reset --hard 哈希值
